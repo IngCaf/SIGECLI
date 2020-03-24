@@ -9,21 +9,35 @@
     </Compartments>
     <TypeIdentifier>
       <HashCode>ABAAAAAAQgQAIAiAACAAmAIAAAAOAEBMAABABBQAAAA=</HashCode>
-      <FileName>claseCliente.cs</FileName>
+      <FileName>Clases\claseCliente.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="SIGECLI.claseTelefonoCliente" Collapsed="true">
     <Position X="3.5" Y="0.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAQAQABAAAAAQAAAAAAAAAAAAMAAEABAABAAA=</HashCode>
-      <FileName>claseTelefonoCliente.cs</FileName>
+      <FileName>Clases\claseTelefonoCliente.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="SIGECLI.claseConexion">
     <Position X="4.5" Y="2" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>claseConexion.cs</FileName>
+      <HashCode>AAAAAAACAAAAAIAEAAAAAAAAABAABAQAAAAAAAAQAAE=</HashCode>
+      <FileName>Clases\claseConexion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SIGECLI.claseDepartamento">
+    <Position X="7.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAwAAABgAAAAIgAAAEAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Clases\claseDepartamento.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SIGECLI.claseListaDepartamentos">
+    <Position X="11.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAQAAAAAAABAAAAAAACAAAAAEAAAAAAAAAAAE=</HashCode>
+      <FileName>Clases\claseListaDepartamentos.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />
