@@ -15,6 +15,7 @@ namespace SIGECLI
         private string servidor;
         private string usuario;
         private string pass;
+        private MySqlException error;
 
         public claseConexion()
         {
@@ -73,7 +74,7 @@ namespace SIGECLI
             }
             return t;
         }
-        public void IUD(string sql)
+        public Boolean IUD(string sql)
         {
             conectar();
             MySqlCommand comando = conexion.CreateCommand();
@@ -82,12 +83,17 @@ namespace SIGECLI
                 comando.Connection = conexion;
                 comando.CommandText = sql;
                 comando.ExecuteNonQuery();
-                MessageBox.Show("EJECUTADO");
+                return true;
             }
             catch (MySqlException ex)
             {
-                MessageBox.Show(string.Format("Error: \n{0}", ex.ToString()), "Conexión", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                error = ex;
+                return false;
             }
+        }
+        public MySqlException Error
+        {
+            get { return error; }
         }
     }
 }

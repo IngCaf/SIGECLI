@@ -76,6 +76,8 @@
             // chbHabilitado
             // 
             this.chbHabilitado.AutoSize = true;
+            this.chbHabilitado.Checked = true;
+            this.chbHabilitado.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chbHabilitado.Location = new System.Drawing.Point(239, 12);
             this.chbHabilitado.Name = "chbHabilitado";
             this.chbHabilitado.Size = new System.Drawing.Size(73, 17);
@@ -115,6 +117,7 @@
             this.btnGuardar.TabIndex = 8;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // btnModificar
             // 
