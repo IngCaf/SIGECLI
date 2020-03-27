@@ -81,7 +81,19 @@ namespace SIGECLI
         }
         public Boolean Guardar()
         {
-            if (conexion.IUD(string.Format("INSERT INTO departamentos (codigoDepartamento, nombreDepartamento, habilitado) value('{0}','{1}')", Codigo, Nombre)))
+            if (conexion.IUD(string.Format("INSERT INTO departamentos (codigoDepartamento, nombreDepartamento, habilitado) value('{0}','{1}', {2})", Codigo, Nombre, habilitado)))
+            {
+                return true;
+            }
+            else
+            {
+                error = conexion.Error;
+                return false;
+            }
+        }
+        public Boolean Modificar()
+        {
+            if (conexion.IUD(string.Format("UPDATE departamentos SET nombreDepartamento='{0}', habilitado={1}  WHERE iddepartamento={2}", Nombre, habilitado, iddepartamento)))
             {
                 return true;
             }
