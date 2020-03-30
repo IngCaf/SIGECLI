@@ -103,6 +103,18 @@ namespace SIGECLI
                 return false;
             }
         }
+        public Boolean Eliminar()
+        {
+            if (conexion.IUD(string.Format("DELETE FROM departamentos WHERE iddepartamento={0}", iddepartamento)))
+            {
+                return true;
+            }
+            else
+            {
+                error = conexion.Error;
+                return false;
+            }
+        }
         public MySqlException Error
         {
             get { return error; }
