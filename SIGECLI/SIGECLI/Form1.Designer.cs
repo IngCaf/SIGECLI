@@ -33,6 +33,8 @@
             this.button3 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.pnlContenedor = new System.Windows.Forms.Panel();
+            this.btnFormulario = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -78,16 +80,35 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(182, 178);
+            this.comboBox1.Location = new System.Drawing.Point(180, 127);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(389, 21);
             this.comboBox1.TabIndex = 4;
+            // 
+            // pnlContenedor
+            // 
+            this.pnlContenedor.Location = new System.Drawing.Point(49, 173);
+            this.pnlContenedor.Name = "pnlContenedor";
+            this.pnlContenedor.Size = new System.Drawing.Size(683, 265);
+            this.pnlContenedor.TabIndex = 5;
+            // 
+            // btnFormulario
+            // 
+            this.btnFormulario.Location = new System.Drawing.Point(643, 127);
+            this.btnFormulario.Name = "btnFormulario";
+            this.btnFormulario.Size = new System.Drawing.Size(75, 23);
+            this.btnFormulario.TabIndex = 6;
+            this.btnFormulario.Text = "Formulario";
+            this.btnFormulario.UseVisualStyleBackColor = true;
+            this.btnFormulario.Click += new System.EventHandler(this.btnFormulario_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnFormulario);
+            this.Controls.Add(this.pnlContenedor);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button3);
@@ -108,6 +129,8 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Panel pnlContenedor;
+        private System.Windows.Forms.Button btnFormulario;
     }
 }
 

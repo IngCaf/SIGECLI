@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SIGECLI.Clientes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -75,6 +76,11 @@ namespace SIGECLI
             {
                 MessageBox.Show("No existen ciudades en este departamento");
             }
+            
+        }
+
+        private void btnFormulario_Click(object sender, EventArgs e)
+        {
             
         }
     }

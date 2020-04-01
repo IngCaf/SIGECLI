@@ -18,7 +18,7 @@ namespace SIGECLI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FDepartamento());
+            Application.Run(new FPanel());
         }
     }
 }
